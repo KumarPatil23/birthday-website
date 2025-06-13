@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  color: #fff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 50px 20px;
+  max-width: 700px;
+  margin: auto;
+  position: relative;
+}
+
+.title {
+  font-size: 3em;
+  animation: popUp 1.5s ease-in-out forwards;
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.message, .extra-message {
+  font-size: 1.2em;
+  margin-top: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.highlight {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  background-color: #ff6f91;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #ff3e6c;
+}
+
+.hidden {
+  display: none;
+  margin-top: 30px;
+}
+
+.birthday-gif {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
